@@ -6,10 +6,10 @@ import Routes from './src/Routes';
 function App() {
   return (
     <>
-      <Status barStyle={"auto"} />
+      <StatusBar barStyle={"auto"} />
       <Routes />
     </>
-  )
+  );
 }
 
 export default App
