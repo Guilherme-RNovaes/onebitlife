@@ -13,7 +13,7 @@ function LifeStatus() {
         No robô, nós temos primeiro Felicidade e depois a Saúde (xx-xx)
     */
   return (
-    <View style={StyleSheet.container}>
+    <View style={styles.container}>
         <Lottie
             source = {require("../../../assets/education/education-100.json")}
             autoPlay
@@ -48,17 +48,20 @@ const styles = StyleSheet.create ({
     roboAnimacao: {
         width: 190,
         marginTop: 30,
+        marginLeft: 25,
     },
+
     educacaoAnimacao: {
         width: 100,
         marginTop: 50,
-        marginLeft: -20,
+        marginLeft: 5,
         position: "absolute",
     },
+
     financasAnimacao: {
         width: 100,
         marginTop: 50,
-        marginLeft: 70,
+        marginLeft: 95,
         position: "absolute",
     },
 });
