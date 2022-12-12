@@ -40,7 +40,7 @@ function ExplanationCard() {
                 style={styles.icon}
             />
             <Text style={styles.description}>
-                <Text style={styles.fun}>Humow: </Text> Hábitos para controlar o stress {"\n"} e aumentar a felicidade
+                <Text style={styles.fun}>Humor: </Text> Hábitos para controlar o stress {"\n"} e aumentar a felicidade
             </Text>
         </View>
     </View>
