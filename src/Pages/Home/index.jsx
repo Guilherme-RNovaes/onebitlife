@@ -3,6 +3,7 @@ import React from 'react'
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
 
 import LifeStatus from '../../Components/Common/LifeStatus';
+import StatusBar from '../../Components/Home/StatusBar';
 
 function Home() {
 
@@ -18,6 +19,7 @@ function Home() {
             <View style={{alignItems: "center"}}>
                 <Text style={styles.dailyChecks}> ❤️ 20 dias - ✔️ 80 checks </Text>
                 <LifeStatus />
+                <StatusBar />   
             </View>
             <Text
                 style={styles.explanationText}
