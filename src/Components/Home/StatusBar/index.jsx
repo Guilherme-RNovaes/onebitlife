@@ -5,7 +5,7 @@ import { ProgressBar } from 'react-native-paper'
 
 import LifeStatus from '../../Common/LifeStatus'
 
-function StatusBar(props) {
+function StatusBar() {
   return (
     <View style={styles.container}>
         <View style={styles.statusBarContainer}>
