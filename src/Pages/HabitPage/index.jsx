@@ -2,27 +2,32 @@ import { useNavigation } from '@react-navigation/native'
 import React, { useState } from 'react'
 import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView, Alert } from 'react-native'
 
-function HabitPage() {
+function HabitPage({ route }) {
   const navigation = useNavigation()
+  const { create, habit } = route.params
 
   return (
     <View style={styles.container}>
-        <ScrollView>
-            <View>
-                <TouchableOpacity
-                    style={styles.backPageBtn}
-                    onPress={() => navigation.goBack()}
-                >
-                    <Image
-                        source={require("../../assets/icons/arrowBack.png")}
-                        style={styles.arrowBack}
-                    />
-                </TouchableOpacity>
-                <View style={styles.mainContent}>
-
-                </View>
+      <ScrollView>
+        <View>
+          <TouchableOpacity
+            style={styles.backPageBtn}
+            onPress={() => navigation.goBack()}
+          >
+            <Image
+              source={require("../../assets/icons/arrowBack.png")}
+              style={styles.arrowBack}
+            />
+          </TouchableOpacity>
+          <View style={styles.mainContent}>
+            <Text style={styles.title}>Configurações {"\n"} de hábito</Text>
+            <Text style={styles.inputText}>Área</Text>
+            <View style={styles.inputContainer}>
+              <Text style={styles.area}>{habit?.habitArea}</Text>
             </View>
-        </ScrollView>
+          </View>
+        </View>
+      </ScrollView>
     </View>
   )
 }
