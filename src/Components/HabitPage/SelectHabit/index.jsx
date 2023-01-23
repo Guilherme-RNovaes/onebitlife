@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import { StyleSheet, Image } from 'react-native'
 import { SelectList } from 'react-native-dropdown-select-list'
+import habitsData from "../../../Database/HabitsData"
 
 function SelectHabit({ habit, habitInput }) {
   const [selected, setSelected] = useState(
